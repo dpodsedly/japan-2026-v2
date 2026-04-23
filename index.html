@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan · December Trip</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Falling petals -->
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-jp sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-dot d-inline-block"></span>日本 · Japan December</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="tokyo.html">Tokyo</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakone.html">Hakone</a></li>
+          <li class="nav-item"><a class="nav-link" href="osaka.html">Osaka</a></li>
+          <li class="nav-item"><a class="nav-link" href="hiroshima.html">Hiroshima</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero container text-center position-relative">
+    <div class="jp-label">十二月 · DECEMBER 2026</div>
+    <div class="tori-divider d-flex align-items-center justify-content-center">❋</div>
+    <h1>A winter journey<br>through Japan</h1>
+    <p class="lead mt-3 mx-auto text-sumi" style="max-width: 620px;">
+      Eleven nights from the neon quiet of Shinjuku to a New Year's Eve
+      in Hiroshima — by way of a ryokan tucked in the hills of Hakone
+      and four cozy nights in Osaka.
+    </p>
+  </section>
+
+  <!-- Map -->
+  <section class="container mb-5">
+    <div class="map-card">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5 order-lg-1">
+          <div class="jp-label">地図 · THE ROUTE</div>
+          <h2 class="mt-2 mb-3 fs-3">Our path across Honshu</h2>
+          <p class="text-sumi">
+            The route threads west along Japan's main island: a Romancecar ride
+            from Shinjuku into the mountains of Hakone, then the Shinkansen carries
+            us onward through Osaka to Hiroshima on the Seto Inland Sea.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-3">
+            <div class="map-legend-item d-inline-flex align-items-center"><span class="dot d-inline-block" style="background: var(--sakura-2);"></span>Tokyo</div>
+            <div class="map-legend-item d-inline-flex align-items-center"><span class="dot d-inline-block" style="background: var(--matcha);"></span>Hakone</div>
+            <div class="map-legend-item d-inline-flex align-items-center"><span class="dot d-inline-block" style="background: var(--persimmon);"></span>Osaka</div>
+            <div class="map-legend-item d-inline-flex align-items-center"><span class="dot d-inline-block" style="background: var(--indigo);"></span>Hiroshima</div>
+          </div>
+          <div class="transport-strip mt-4">
+            <span class="tx-icon">🚄</span>
+            Tokyo → Hakone by Odakyu <strong>Romancecar</strong>, then <strong>Shinkansen</strong> onward to Osaka and Hiroshima.
+          </div>
+        </div>
+        <div class="col-lg-7 order-lg-2 text-center">
+      <svg viewBox="0 0 1280 1460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Route map of Japan" class="japan-map" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <!-- Base Japan map image (warm washi-tinted) -->
+        <image href="japan-map.png" x="0" y="0" width="1280" height="1460"/>
+
+        <!-- Region labels in the sea -->
+        <text x="1050" y="220" font-family="Shippori Mincho, serif" font-size="26" fill="#b89656" font-style="italic" opacity="0.6">Hokkaidō · 北海道</text>
+        <text x="200"  y="1100" font-family="Shippori Mincho, serif" font-size="22" fill="#b89656" font-style="italic" opacity="0.6">Kyūshū · 九州</text>
+        <text x="340"  y="1020" font-family="Shippori Mincho, serif" font-size="20" fill="#b89656" font-style="italic" opacity="0.6">Shikoku · 四国</text>
+        <text x="140"  y="1360" text-anchor="start" font-family="Shippori Mincho, serif" font-size="24" fill="#b89656" font-style="italic" opacity="0.5" letter-spacing="0.2em">太 平 洋 · Pacific Ocean</text>
+
+        <!-- Route line: Tokyo → Hakone → Osaka → Hiroshima -->
+        <path class="route-line"
+              d="M 830,755 Q 810,770 795,775 Q 730,835 665,875 Q 560,900 460,915"
+              fill="none" stroke="#e89aa8" stroke-width="6"
+              stroke-dasharray="12 14" stroke-linecap="round"
+              filter="url(#softGlow)"/>
+
+        <!-- Mt Fuji marker (just a small flourish near Hakone) -->
+        <g opacity="0.85">
+          <path d="M 765,765 L 778,738 L 791,765 Z" fill="#c9a96e" stroke="#b89656" stroke-width="1.2"/>
+          <path d="M 772,752 L 778,738 L 784,752 L 781,755 L 775,755 Z" fill="#fff"/>
+          <text x="778" y="735" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="14" fill="#9a7e3e" opacity="0.85">Mt Fuji</text>
+        </g>
+
+        <!-- CITY MARKERS -->
+        <!-- Hiroshima -->
+        <g>
+          <circle cx="460" cy="915" r="26" fill="#3b5a80" opacity="0.2"/>
+          <circle cx="460" cy="915" r="14" fill="#3b5a80"/>
+          <circle cx="460" cy="915" r="6"  fill="#fff"/>
+          <text x="460" y="878" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="30" font-weight="700" fill="#2a2a2a">Hiroshima</text>
+          <text x="460" y="953" text-anchor="middle" font-family="Zen Maru Gothic, sans-serif" font-size="20" fill="#4a4a4a">2 nights · NYE</text>
+        </g>
+
+        <!-- Osaka -->
+        <g>
+          <circle cx="665" cy="875" r="26" fill="#e07856" opacity="0.2"/>
+          <circle cx="665" cy="875" r="14" fill="#e07856"/>
+          <circle cx="665" cy="875" r="6"  fill="#fff"/>
+          <text x="665" y="945" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="30" font-weight="700" fill="#2a2a2a">Osaka</text>
+          <text x="665" y="970" text-anchor="middle" font-family="Zen Maru Gothic, sans-serif" font-size="20" fill="#4a4a4a">4 nights</text>
+        </g>
+
+        <!-- Hakone -->
+        <g>
+          <circle cx="795" cy="775" r="22" fill="#8ab17d" opacity="0.2"/>
+          <circle cx="795" cy="775" r="11" fill="#8ab17d"/>
+          <circle cx="795" cy="775" r="5"  fill="#fff"/>
+          <text x="715" y="818" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="26" font-weight="700" fill="#2a2a2a">Hakone</text>
+          <text x="715" y="842" text-anchor="middle" font-family="Zen Maru Gothic, sans-serif" font-size="18" fill="#4a4a4a">1 night</text>
+        </g>
+
+        <!-- Tokyo -->
+        <g>
+          <circle cx="830" cy="755" r="28" fill="#e89aa8" opacity="0.25"/>
+          <circle cx="830" cy="755" r="15" fill="#e89aa8"/>
+          <circle cx="830" cy="755" r="6"  fill="#fff"/>
+          <text x="880" y="745" text-anchor="start" font-family="Shippori Mincho, serif" font-size="32" font-weight="700" fill="#2a2a2a">Tokyo</text>
+          <text x="880" y="772" text-anchor="start" font-family="Zen Maru Gothic, sans-serif" font-size="20" fill="#4a4a4a">4 nights · start</text>
+        </g>
+
+        <!-- COMPASS ROSE (top-left, in the empty sea) -->
+        <g transform="translate(150, 280)">
+          <circle r="60" fill="#fff" stroke="#e5d9c0" stroke-width="2"/>
+          <path d="M 0,-48 L 9,0 L -9,0 Z" fill="#e89aa8"/>
+          <path d="M 0,48 L 9,0 L -9,0 Z"  fill="#c9a96e"/>
+          <path d="M -48,0 L 0,9 L 0,-9 Z" fill="#c9a96e"/>
+          <path d="M 48,0 L 0,9 L 0,-9 Z"  fill="#c9a96e"/>
+          <circle r="6" fill="#2a2a2a"/>
+          <text y="-68" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="22" font-weight="700" fill="#4a4a4a">N</text>
+        </g>
+      </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Segments carousel -->
+  <section class="container mb-5 pb-4">
+    <div class="d-flex align-items-end justify-content-between mb-4">
+      <div>
+        <div class="jp-label">行程 · THE ITINERARY</div>
+        <h2 class="mt-1 mb-0">Four stops, one journey</h2>
+      </div>
+    </div>
+
+    <div id="segmentsCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+
+        <!-- Slide 1: one card per viewport on mobile, three on desktop -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <a href="tokyo.html" class="segment-card d-block h-100">
+                <div class="card-img-wrap position-relative">
+                  <img src="https://picsum.photos/seed/tokyo-shinjuku/600/450" alt="Shinjuku, Tokyo">
+                  <span class="nights-badge position-absolute">4 nights</span>
+                </div>
+                <div class="card-body">
+                  <div class="segment-number">第一章 · Stop 01</div>
+                  <h3>Tokyo · Shinjuku</h3>
+                  <p>Neon alleys, golden-lit izakaya, and the quiet of early-morning Meiji Jingū.</p>
+                  <span class="read-more">Read more →</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="hakone.html" class="segment-card d-block h-100">
+                <div class="card-img-wrap position-relative">
+                  <img src="https://picsum.photos/seed/hakone-ryokan/600/450" alt="Hakone ryokan">
+                  <span class="nights-badge position-absolute">1 night</span>
+                </div>
+                <div class="card-body">
+                  <div class="segment-number">第二章 · Stop 02</div>
+                  <h3>Hakone · Yoshimatsu</h3>
+                  <p>A private open-air onsen, a kaiseki feast, and a view of Mt Fuji over breakfast.</p>
+                  <span class="read-more">Read more →</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="osaka.html" class="segment-card d-block h-100">
+                <div class="card-img-wrap position-relative">
+                  <img src="https://picsum.photos/seed/osaka-dotonbori/600/450" alt="Osaka street food">
+                  <span class="nights-badge position-absolute">4 nights</span>
+                </div>
+                <div class="card-body">
+                  <div class="segment-number">第三章 · Stop 03</div>
+                  <h3>Osaka · Kansai base</h3>
+                  <p>Street food in Dōtonbori, day trips to Kyoto and Nara's friendly deer.</p>
+                  <span class="read-more">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <a href="hiroshima.html" class="segment-card d-block h-100">
+                <div class="card-img-wrap position-relative">
+                  <img src="https://picsum.photos/seed/hiroshima-miyajima/600/450" alt="Miyajima torii">
+                  <span class="nights-badge position-absolute">2 nights</span>
+                </div>
+                <div class="card-body">
+                  <div class="segment-number">第四章 · Stop 04</div>
+                  <h3>Hiroshima · New Year</h3>
+                  <p>Miyajima's floating torii, okonomiyaki at Okonomi-mura, and hatsumōde at midnight.</p>
+                  <span class="read-more">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#segmentsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#segmentsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#segmentsCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#segmentsCarousel" data-bs-slide-to="1"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer text-center">
+    <div class="footer-mark">❋</div>
+    <p class="mb-1 mt-2">Japan · December 2026</p>
+    <small>Made with tea and anticipation</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
