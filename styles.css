@@ -212,40 +212,6 @@ h1, h2, h3, h4, .display-font {
   font-size: 0.9rem;
 }
 
-/* ---------- Carousel controls ---------- */
-#segmentsCarousel .carousel-control-prev,
-#segmentsCarousel .carousel-control-next {
-  width: 40px; height: 40px;
-  background: #fff;
-  border: 1px solid var(--washi-2);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 1;
-  box-shadow: 0 4px 12px rgba(42,42,42,0.06);
-}
-#segmentsCarousel .carousel-control-prev { left: -20px; }
-#segmentsCarousel .carousel-control-next { right: -20px; }
-#segmentsCarousel .carousel-control-prev-icon,
-#segmentsCarousel .carousel-control-next-icon {
-  filter: invert(0.5);
-  width: 14px; height: 14px;
-}
-#segmentsCarousel .carousel-indicators {
-  bottom: -50px;
-}
-#segmentsCarousel .carousel-indicators [data-bs-target] {
-  background-color: var(--sakura);
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  border: none;
-  opacity: 0.4;
-}
-#segmentsCarousel .carousel-indicators .active {
-  opacity: 1;
-  background-color: var(--sakura-2);
-}
-
 /* ---------- Transport strip ---------- */
 .transport-strip {
   background: #fff;
@@ -416,6 +382,4 @@ h1, h2, h3, h4, .display-font {
 /* ---------- Responsive tweaks ---------- */
 @media (max-width: 768px) {
   .hero { padding: 3rem 0 2rem; }
-  #segmentsCarousel .carousel-control-prev { left: -8px; }
-  #segmentsCarousel .carousel-control-next { right: -8px; }
 }
