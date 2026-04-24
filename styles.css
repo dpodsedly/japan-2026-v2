@@ -278,11 +278,18 @@ h1, h2, h3, h4, .display-font {
   color: var(--sakura-2);
   border-bottom-color: var(--sakura-2);
 }
+.stay-photos img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .stay-callout .stay-link::after {
   content: ' ↗';
   font-size: 0.75em;
   color: var(--sakura-2);
-  vertical-align: super;
+  vertical-align: middle;
   margin-left: 2px;
 }
 
